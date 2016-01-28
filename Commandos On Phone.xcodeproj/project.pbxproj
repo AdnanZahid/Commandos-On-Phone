@@ -7,33 +7,167 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84F6ABC41BD58C380030D184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6ABC31BD58C380030D184 /* main.m */; };
-		84F6ABC71BD58C380030D184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6ABC61BD58C380030D184 /* AppDelegate.m */; };
-		84F6ABCA1BD58C380030D184 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6ABC91BD58C380030D184 /* GameScene.m */; };
-		84F6ABCC1BD58C380030D184 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 84F6ABCB1BD58C380030D184 /* GameScene.sks */; };
-		84F6ABCF1BD58C380030D184 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6ABCE1BD58C380030D184 /* GameViewController.m */; };
-		84F6ABD21BD58C380030D184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6ABD01BD58C380030D184 /* Main.storyboard */; };
-		84F6ABD41BD58C380030D184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F6ABD31BD58C380030D184 /* Assets.xcassets */; };
-		84F6ABD71BD58C380030D184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6ABD51BD58C380030D184 /* LaunchScreen.storyboard */; };
+		840B6F071BDBA9EB00507D69 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F021BDBA9EB00507D69 /* GameScene.m */; };
+		840B6F0C1BDBA9FD00507D69 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F021BDBA9EB00507D69 /* GameScene.m */; };
+		840B6F171BDBAA4A00507D69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F121BDBAA4A00507D69 /* AppDelegate.m */; };
+		840B6F181BDBAA4A00507D69 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F141BDBAA4A00507D69 /* GameViewController.m */; };
+		840B6F191BDBAA4A00507D69 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F151BDBAA4A00507D69 /* Info.plist */; };
+		840B6F1A1BDBAA4A00507D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F161BDBAA4A00507D69 /* main.m */; };
+		840B6F271BDBABD900507D69 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F241BDBABD900507D69 /* Map.m */; };
+		840B6F281BDBABD900507D69 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F241BDBABD900507D69 /* Map.m */; };
+		840B6F291BDBABD900507D69 /* ShortestPathStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F261BDBABD900507D69 /* ShortestPathStep.m */; };
+		840B6F2A1BDBABD900507D69 /* ShortestPathStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F261BDBABD900507D69 /* ShortestPathStep.m */; };
+		840B6F311BDBABE600507D69 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F2C1BDBABE600507D69 /* Car.m */; };
+		840B6F321BDBABE600507D69 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F2C1BDBABE600507D69 /* Car.m */; };
+		840B6F331BDBABE600507D69 /* PathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F2E1BDBABE600507D69 /* PathFinder.m */; };
+		840B6F341BDBABE600507D69 /* PathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F2E1BDBABE600507D69 /* PathFinder.m */; };
+		840B6F351BDBABE600507D69 /* Soldier.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F301BDBABE600507D69 /* Soldier.m */; };
+		840B6F361BDBABE600507D69 /* Soldier.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F301BDBABE600507D69 /* Soldier.m */; };
+		840B6F3B1BDBABEF00507D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F371BDBABEF00507D69 /* Assets.xcassets */; };
+		840B6F3C1BDBABEF00507D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F371BDBABEF00507D69 /* Assets.xcassets */; };
+		840B6F3D1BDBABEF00507D69 /* SpriteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F3A1BDBABEF00507D69 /* SpriteFactory.m */; };
+		840B6F3E1BDBABEF00507D69 /* SpriteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B6F3A1BDBABEF00507D69 /* SpriteFactory.m */; };
+		840B6F521BDBAC0600507D69 /* car1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F3F1BDBAC0600507D69 /* car1.atlas */; };
+		840B6F531BDBAC0600507D69 /* car1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F3F1BDBAC0600507D69 /* car1.atlas */; };
+		840B6F541BDBAC0600507D69 /* car2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F401BDBAC0600507D69 /* car2.atlas */; };
+		840B6F551BDBAC0600507D69 /* car2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F401BDBAC0600507D69 /* car2.atlas */; };
+		840B6F561BDBAC0600507D69 /* fire.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F411BDBAC0600507D69 /* fire.atlas */; };
+		840B6F571BDBAC0600507D69 /* fire.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F411BDBAC0600507D69 /* fire.atlas */; };
+		840B6F581BDBAC0600507D69 /* runBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F421BDBAC0600507D69 /* runBackward.atlas */; };
+		840B6F591BDBAC0600507D69 /* runBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F421BDBAC0600507D69 /* runBackward.atlas */; };
+		840B6F5A1BDBAC0600507D69 /* runForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F431BDBAC0600507D69 /* runForward.atlas */; };
+		840B6F5B1BDBAC0600507D69 /* runForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F431BDBAC0600507D69 /* runForward.atlas */; };
+		840B6F5C1BDBAC0600507D69 /* runLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F441BDBAC0600507D69 /* runLeft.atlas */; };
+		840B6F5D1BDBAC0600507D69 /* runLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F441BDBAC0600507D69 /* runLeft.atlas */; };
+		840B6F5E1BDBAC0600507D69 /* runLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F451BDBAC0600507D69 /* runLeftBackward.atlas */; };
+		840B6F5F1BDBAC0600507D69 /* runLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F451BDBAC0600507D69 /* runLeftBackward.atlas */; };
+		840B6F601BDBAC0600507D69 /* runLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F461BDBAC0600507D69 /* runLeftForward.atlas */; };
+		840B6F611BDBAC0600507D69 /* runLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F461BDBAC0600507D69 /* runLeftForward.atlas */; };
+		840B6F621BDBAC0600507D69 /* runRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F471BDBAC0600507D69 /* runRight.atlas */; };
+		840B6F631BDBAC0600507D69 /* runRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F471BDBAC0600507D69 /* runRight.atlas */; };
+		840B6F641BDBAC0600507D69 /* runRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F481BDBAC0600507D69 /* runRightBackward.atlas */; };
+		840B6F651BDBAC0600507D69 /* runRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F481BDBAC0600507D69 /* runRightBackward.atlas */; };
+		840B6F661BDBAC0600507D69 /* runRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F491BDBAC0600507D69 /* runRightForward.atlas */; };
+		840B6F671BDBAC0600507D69 /* runRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F491BDBAC0600507D69 /* runRightForward.atlas */; };
+		840B6F681BDBAC0600507D69 /* walkBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4A1BDBAC0600507D69 /* walkBackward.atlas */; };
+		840B6F691BDBAC0600507D69 /* walkBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4A1BDBAC0600507D69 /* walkBackward.atlas */; };
+		840B6F6A1BDBAC0600507D69 /* walkForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4B1BDBAC0600507D69 /* walkForward.atlas */; };
+		840B6F6B1BDBAC0600507D69 /* walkForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4B1BDBAC0600507D69 /* walkForward.atlas */; };
+		840B6F6C1BDBAC0600507D69 /* walkLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4C1BDBAC0600507D69 /* walkLeft.atlas */; };
+		840B6F6D1BDBAC0600507D69 /* walkLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4C1BDBAC0600507D69 /* walkLeft.atlas */; };
+		840B6F6E1BDBAC0600507D69 /* walkLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4D1BDBAC0600507D69 /* walkLeftBackward.atlas */; };
+		840B6F6F1BDBAC0600507D69 /* walkLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4D1BDBAC0600507D69 /* walkLeftBackward.atlas */; };
+		840B6F701BDBAC0600507D69 /* walkLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4E1BDBAC0600507D69 /* walkLeftForward.atlas */; };
+		840B6F711BDBAC0600507D69 /* walkLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4E1BDBAC0600507D69 /* walkLeftForward.atlas */; };
+		840B6F721BDBAC0600507D69 /* walkRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4F1BDBAC0600507D69 /* walkRight.atlas */; };
+		840B6F731BDBAC0600507D69 /* walkRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F4F1BDBAC0600507D69 /* walkRight.atlas */; };
+		840B6F741BDBAC0600507D69 /* walkRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F501BDBAC0600507D69 /* walkRightBackward.atlas */; };
+		840B6F751BDBAC0600507D69 /* walkRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F501BDBAC0600507D69 /* walkRightBackward.atlas */; };
+		840B6F761BDBAC0600507D69 /* walkRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F511BDBAC0600507D69 /* walkRightForward.atlas */; };
+		840B6F771BDBAC0600507D69 /* walkRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 840B6F511BDBAC0600507D69 /* walkRightForward.atlas */; };
+		849F14E31BDB9EC60036BF7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F14E21BDB9EC60036BF7E /* AppDelegate.m */; };
+		849F14E61BDB9EC60036BF7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F14E51BDB9EC60036BF7E /* main.m */; };
+		84A131691BDC0CBE00DDD1A4 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131681BDC0CBE00DDD1A4 /* Hero.m */; };
+		84A1316A1BDC0CBE00DDD1A4 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131681BDC0CBE00DDD1A4 /* Hero.m */; };
+		84A131731BDC0D0A00DDD1A4 /* shootBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316B1BDC0D0A00DDD1A4 /* shootBackward.atlas */; };
+		84A131741BDC0D0A00DDD1A4 /* shootBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316B1BDC0D0A00DDD1A4 /* shootBackward.atlas */; };
+		84A131751BDC0D0A00DDD1A4 /* shootForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316C1BDC0D0A00DDD1A4 /* shootForward.atlas */; };
+		84A131761BDC0D0A00DDD1A4 /* shootForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316C1BDC0D0A00DDD1A4 /* shootForward.atlas */; };
+		84A131771BDC0D0A00DDD1A4 /* shootLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316D1BDC0D0A00DDD1A4 /* shootLeft.atlas */; };
+		84A131781BDC0D0A00DDD1A4 /* shootLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316D1BDC0D0A00DDD1A4 /* shootLeft.atlas */; };
+		84A131791BDC0D0A00DDD1A4 /* shootLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316E1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas */; };
+		84A1317A1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316E1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas */; };
+		84A1317B1BDC0D0A00DDD1A4 /* shootLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316F1BDC0D0A00DDD1A4 /* shootLeftForward.atlas */; };
+		84A1317C1BDC0D0A00DDD1A4 /* shootLeftForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1316F1BDC0D0A00DDD1A4 /* shootLeftForward.atlas */; };
+		84A1317D1BDC0D0A00DDD1A4 /* shootRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131701BDC0D0A00DDD1A4 /* shootRight.atlas */; };
+		84A1317E1BDC0D0A00DDD1A4 /* shootRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131701BDC0D0A00DDD1A4 /* shootRight.atlas */; };
+		84A1317F1BDC0D0A00DDD1A4 /* shootRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131711BDC0D0A00DDD1A4 /* shootRightBackward.atlas */; };
+		84A131801BDC0D0A00DDD1A4 /* shootRightBackward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131711BDC0D0A00DDD1A4 /* shootRightBackward.atlas */; };
+		84A131811BDC0D0A00DDD1A4 /* shootRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131721BDC0D0A00DDD1A4 /* shootRightForward.atlas */; };
+		84A131821BDC0D0A00DDD1A4 /* shootRightForward.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A131721BDC0D0A00DDD1A4 /* shootRightForward.atlas */; };
+		84A131851BDC0D5B00DDD1A4 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131841BDC0D5B00DDD1A4 /* SKButton.m */; };
+		84A131861BDC0D5B00DDD1A4 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131841BDC0D5B00DDD1A4 /* SKButton.m */; };
+		84A131891BDC0D7900DDD1A4 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131881BDC0D7900DDD1A4 /* Enemy.m */; };
+		84A1318A1BDC0D7900DDD1A4 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A131881BDC0D7900DDD1A4 /* Enemy.m */; };
+		84A1318C1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1318B1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas */; };
+		84A1318D1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84A1318B1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840B6F011BDBA9EB00507D69 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = "Shared resources/GameScene.h"; sourceTree = "<group>"; };
+		840B6F021BDBA9EB00507D69 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = "Shared resources/GameScene.m"; sourceTree = "<group>"; };
+		840B6F111BDBAA4A00507D69 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		840B6F121BDBAA4A00507D69 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		840B6F131BDBAA4A00507D69 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		840B6F141BDBAA4A00507D69 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		840B6F151BDBAA4A00507D69 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840B6F161BDBAA4A00507D69 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		840B6F231BDBABD900507D69 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = "Shared resources/Map/Map.h"; sourceTree = "<group>"; };
+		840B6F241BDBABD900507D69 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = "Shared resources/Map/Map.m"; sourceTree = "<group>"; };
+		840B6F251BDBABD900507D69 /* ShortestPathStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortestPathStep.h; path = "Shared resources/Map/ShortestPathStep.h"; sourceTree = "<group>"; };
+		840B6F261BDBABD900507D69 /* ShortestPathStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortestPathStep.m; path = "Shared resources/Map/ShortestPathStep.m"; sourceTree = "<group>"; };
+		840B6F2B1BDBABE600507D69 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = "Shared resources/Movable objects/Car.h"; sourceTree = "<group>"; };
+		840B6F2C1BDBABE600507D69 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = "Shared resources/Movable objects/Car.m"; sourceTree = "<group>"; };
+		840B6F2D1BDBABE600507D69 /* PathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathFinder.h; path = "Shared resources/Movable objects/PathFinder.h"; sourceTree = "<group>"; };
+		840B6F2E1BDBABE600507D69 /* PathFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathFinder.m; path = "Shared resources/Movable objects/PathFinder.m"; sourceTree = "<group>"; };
+		840B6F2F1BDBABE600507D69 /* Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Soldier.h; path = "Shared resources/Movable objects/Soldier.h"; sourceTree = "<group>"; };
+		840B6F301BDBABE600507D69 /* Soldier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Soldier.m; path = "Shared resources/Movable objects/Soldier.m"; sourceTree = "<group>"; };
+		840B6F371BDBABEF00507D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Shared resources/Other/Assets.xcassets"; sourceTree = "<group>"; };
+		840B6F381BDBABEF00507D69 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonMacros.h; path = "Shared resources/Other/CommonMacros.h"; sourceTree = "<group>"; };
+		840B6F391BDBABEF00507D69 /* SpriteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteFactory.h; path = "Shared resources/Other/SpriteFactory.h"; sourceTree = "<group>"; };
+		840B6F3A1BDBABEF00507D69 /* SpriteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpriteFactory.m; path = "Shared resources/Other/SpriteFactory.m"; sourceTree = "<group>"; };
+		840B6F3F1BDBAC0600507D69 /* car1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = car1.atlas; path = "Shared resources/Texture atlases/car1.atlas"; sourceTree = "<group>"; };
+		840B6F401BDBAC0600507D69 /* car2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = car2.atlas; path = "Shared resources/Texture atlases/car2.atlas"; sourceTree = "<group>"; };
+		840B6F411BDBAC0600507D69 /* fire.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = fire.atlas; path = "Shared resources/Texture atlases/fire.atlas"; sourceTree = "<group>"; };
+		840B6F421BDBAC0600507D69 /* runBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runBackward.atlas; path = "Shared resources/Texture atlases/runBackward.atlas"; sourceTree = "<group>"; };
+		840B6F431BDBAC0600507D69 /* runForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runForward.atlas; path = "Shared resources/Texture atlases/runForward.atlas"; sourceTree = "<group>"; };
+		840B6F441BDBAC0600507D69 /* runLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runLeft.atlas; path = "Shared resources/Texture atlases/runLeft.atlas"; sourceTree = "<group>"; };
+		840B6F451BDBAC0600507D69 /* runLeftBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runLeftBackward.atlas; path = "Shared resources/Texture atlases/runLeftBackward.atlas"; sourceTree = "<group>"; };
+		840B6F461BDBAC0600507D69 /* runLeftForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runLeftForward.atlas; path = "Shared resources/Texture atlases/runLeftForward.atlas"; sourceTree = "<group>"; };
+		840B6F471BDBAC0600507D69 /* runRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runRight.atlas; path = "Shared resources/Texture atlases/runRight.atlas"; sourceTree = "<group>"; };
+		840B6F481BDBAC0600507D69 /* runRightBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runRightBackward.atlas; path = "Shared resources/Texture atlases/runRightBackward.atlas"; sourceTree = "<group>"; };
+		840B6F491BDBAC0600507D69 /* runRightForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = runRightForward.atlas; path = "Shared resources/Texture atlases/runRightForward.atlas"; sourceTree = "<group>"; };
+		840B6F4A1BDBAC0600507D69 /* walkBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkBackward.atlas; path = "Shared resources/Texture atlases/walkBackward.atlas"; sourceTree = "<group>"; };
+		840B6F4B1BDBAC0600507D69 /* walkForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkForward.atlas; path = "Shared resources/Texture atlases/walkForward.atlas"; sourceTree = "<group>"; };
+		840B6F4C1BDBAC0600507D69 /* walkLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkLeft.atlas; path = "Shared resources/Texture atlases/walkLeft.atlas"; sourceTree = "<group>"; };
+		840B6F4D1BDBAC0600507D69 /* walkLeftBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkLeftBackward.atlas; path = "Shared resources/Texture atlases/walkLeftBackward.atlas"; sourceTree = "<group>"; };
+		840B6F4E1BDBAC0600507D69 /* walkLeftForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkLeftForward.atlas; path = "Shared resources/Texture atlases/walkLeftForward.atlas"; sourceTree = "<group>"; };
+		840B6F4F1BDBAC0600507D69 /* walkRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkRight.atlas; path = "Shared resources/Texture atlases/walkRight.atlas"; sourceTree = "<group>"; };
+		840B6F501BDBAC0600507D69 /* walkRightBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkRightBackward.atlas; path = "Shared resources/Texture atlases/walkRightBackward.atlas"; sourceTree = "<group>"; };
+		840B6F511BDBAC0600507D69 /* walkRightForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = walkRightForward.atlas; path = "Shared resources/Texture atlases/walkRightForward.atlas"; sourceTree = "<group>"; };
+		841F1FB31BDC3A8B00E0B6A7 /* IntruderAlertDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntruderAlertDelegate.h; path = "Shared resources/Movable objects/IntruderAlertDelegate.h"; sourceTree = "<group>"; };
+		848E5EAD1BDD1C64003F872D /* ReachedDestinationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReachedDestinationDelegate.h; path = "Shared resources/Movable objects/ReachedDestinationDelegate.h"; sourceTree = "<group>"; };
+		849F14DF1BDB9EC60036BF7E /* Commandos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commandos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849F14E11BDB9EC60036BF7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849F14E21BDB9EC60036BF7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849F14E51BDB9EC60036BF7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849F14F11BDB9EC60036BF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A131671BDC0CBE00DDD1A4 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = "Shared resources/Movable objects/Hero.h"; sourceTree = "<group>"; };
+		84A131681BDC0CBE00DDD1A4 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hero.m; path = "Shared resources/Movable objects/Hero.m"; sourceTree = "<group>"; };
+		84A1316B1BDC0D0A00DDD1A4 /* shootBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootBackward.atlas; path = "Shared resources/Texture atlases/shootBackward.atlas"; sourceTree = "<group>"; };
+		84A1316C1BDC0D0A00DDD1A4 /* shootForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootForward.atlas; path = "Shared resources/Texture atlases/shootForward.atlas"; sourceTree = "<group>"; };
+		84A1316D1BDC0D0A00DDD1A4 /* shootLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootLeft.atlas; path = "Shared resources/Texture atlases/shootLeft.atlas"; sourceTree = "<group>"; };
+		84A1316E1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootLeftBackward.atlas; path = "Shared resources/Texture atlases/shootLeftBackward.atlas"; sourceTree = "<group>"; };
+		84A1316F1BDC0D0A00DDD1A4 /* shootLeftForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootLeftForward.atlas; path = "Shared resources/Texture atlases/shootLeftForward.atlas"; sourceTree = "<group>"; };
+		84A131701BDC0D0A00DDD1A4 /* shootRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootRight.atlas; path = "Shared resources/Texture atlases/shootRight.atlas"; sourceTree = "<group>"; };
+		84A131711BDC0D0A00DDD1A4 /* shootRightBackward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootRightBackward.atlas; path = "Shared resources/Texture atlases/shootRightBackward.atlas"; sourceTree = "<group>"; };
+		84A131721BDC0D0A00DDD1A4 /* shootRightForward.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shootRightForward.atlas; path = "Shared resources/Texture atlases/shootRightForward.atlas"; sourceTree = "<group>"; };
+		84A131831BDC0D5B00DDD1A4 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKButton.h; path = "Shared resources/Other/SKButton.h"; sourceTree = "<group>"; };
+		84A131841BDC0D5B00DDD1A4 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKButton.m; path = "Shared resources/Other/SKButton.m"; sourceTree = "<group>"; };
+		84A131871BDC0D7900DDD1A4 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = "Shared resources/Movable objects/Enemy.h"; sourceTree = "<group>"; };
+		84A131881BDC0D7900DDD1A4 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Enemy.m; path = "Shared resources/Movable objects/Enemy.m"; sourceTree = "<group>"; };
+		84A1318B1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = gunShotExplosion.atlas; path = "Shared resources/Texture atlases/gunShotExplosion.atlas"; sourceTree = "<group>"; };
 		84F6ABBF1BD58C380030D184 /* Commandos On Phone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commandos On Phone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F6ABC31BD58C380030D184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84F6ABC51BD58C380030D184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		84F6ABC61BD58C380030D184 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84F6ABC81BD58C380030D184 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		84F6ABC91BD58C380030D184 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		84F6ABCB1BD58C380030D184 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		84F6ABCD1BD58C380030D184 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		84F6ABCE1BD58C380030D184 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		84F6ABD11BD58C380030D184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84F6ABD31BD58C380030D184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84F6ABD61BD58C380030D184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84F6ABD81BD58C380030D184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		849F14DC1BDB9EC60036BF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F6ABBC1BD58C380030D184 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,11 +178,147 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8405AA471BDBE0020098946D /* Walk atlases */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F4A1BDBAC0600507D69 /* walkBackward.atlas */,
+				840B6F4B1BDBAC0600507D69 /* walkForward.atlas */,
+				840B6F4C1BDBAC0600507D69 /* walkLeft.atlas */,
+				840B6F4D1BDBAC0600507D69 /* walkLeftBackward.atlas */,
+				840B6F4E1BDBAC0600507D69 /* walkLeftForward.atlas */,
+				840B6F4F1BDBAC0600507D69 /* walkRight.atlas */,
+				840B6F501BDBAC0600507D69 /* walkRightBackward.atlas */,
+				840B6F511BDBAC0600507D69 /* walkRightForward.atlas */,
+			);
+			name = "Walk atlases";
+			sourceTree = "<group>";
+		};
+		8405AA481BDBE00F0098946D /* Run atlases */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F421BDBAC0600507D69 /* runBackward.atlas */,
+				840B6F431BDBAC0600507D69 /* runForward.atlas */,
+				840B6F441BDBAC0600507D69 /* runLeft.atlas */,
+				840B6F451BDBAC0600507D69 /* runLeftBackward.atlas */,
+				840B6F461BDBAC0600507D69 /* runLeftForward.atlas */,
+				840B6F471BDBAC0600507D69 /* runRight.atlas */,
+				840B6F481BDBAC0600507D69 /* runRightBackward.atlas */,
+				840B6F491BDBAC0600507D69 /* runRightForward.atlas */,
+			);
+			name = "Run atlases";
+			sourceTree = "<group>";
+		};
+		8405AA491BDBE01C0098946D /* Shoot atlases */ = {
+			isa = PBXGroup;
+			children = (
+				84A1316B1BDC0D0A00DDD1A4 /* shootBackward.atlas */,
+				84A1316C1BDC0D0A00DDD1A4 /* shootForward.atlas */,
+				84A1316D1BDC0D0A00DDD1A4 /* shootLeft.atlas */,
+				84A1316E1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas */,
+				84A1316F1BDC0D0A00DDD1A4 /* shootLeftForward.atlas */,
+				84A131701BDC0D0A00DDD1A4 /* shootRight.atlas */,
+				84A131711BDC0D0A00DDD1A4 /* shootRightBackward.atlas */,
+				84A131721BDC0D0A00DDD1A4 /* shootRightForward.atlas */,
+			);
+			name = "Shoot atlases";
+			sourceTree = "<group>";
+		};
+		840B6F001BDBA9DA00507D69 /* Shared resources */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F011BDBA9EB00507D69 /* GameScene.h */,
+				840B6F021BDBA9EB00507D69 /* GameScene.m */,
+				840B6F1F1BDBABAE00507D69 /* Map */,
+				840B6F201BDBABB500507D69 /* Movable objects */,
+				840B6F211BDBABBF00507D69 /* Other */,
+				840B6F221BDBABC400507D69 /* Texture atlases */,
+			);
+			name = "Shared resources";
+			sourceTree = "<group>";
+		};
+		840B6F1F1BDBABAE00507D69 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F231BDBABD900507D69 /* Map.h */,
+				840B6F241BDBABD900507D69 /* Map.m */,
+				840B6F251BDBABD900507D69 /* ShortestPathStep.h */,
+				840B6F261BDBABD900507D69 /* ShortestPathStep.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		840B6F201BDBABB500507D69 /* Movable objects */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F2B1BDBABE600507D69 /* Car.h */,
+				840B6F2C1BDBABE600507D69 /* Car.m */,
+				84A131871BDC0D7900DDD1A4 /* Enemy.h */,
+				84A131881BDC0D7900DDD1A4 /* Enemy.m */,
+				84A131671BDC0CBE00DDD1A4 /* Hero.h */,
+				84A131681BDC0CBE00DDD1A4 /* Hero.m */,
+				840B6F2D1BDBABE600507D69 /* PathFinder.h */,
+				840B6F2E1BDBABE600507D69 /* PathFinder.m */,
+				840B6F2F1BDBABE600507D69 /* Soldier.h */,
+				840B6F301BDBABE600507D69 /* Soldier.m */,
+				841F1FB31BDC3A8B00E0B6A7 /* IntruderAlertDelegate.h */,
+				848E5EAD1BDD1C64003F872D /* ReachedDestinationDelegate.h */,
+			);
+			name = "Movable objects";
+			sourceTree = "<group>";
+		};
+		840B6F211BDBABBF00507D69 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F371BDBABEF00507D69 /* Assets.xcassets */,
+				840B6F381BDBABEF00507D69 /* CommonMacros.h */,
+				84A131831BDC0D5B00DDD1A4 /* SKButton.h */,
+				84A131841BDC0D5B00DDD1A4 /* SKButton.m */,
+				840B6F391BDBABEF00507D69 /* SpriteFactory.h */,
+				840B6F3A1BDBABEF00507D69 /* SpriteFactory.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		840B6F221BDBABC400507D69 /* Texture atlases */ = {
+			isa = PBXGroup;
+			children = (
+				840B6F3F1BDBAC0600507D69 /* car1.atlas */,
+				840B6F401BDBAC0600507D69 /* car2.atlas */,
+				840B6F411BDBAC0600507D69 /* fire.atlas */,
+				84A1318B1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas */,
+				8405AA481BDBE00F0098946D /* Run atlases */,
+				8405AA491BDBE01C0098946D /* Shoot atlases */,
+				8405AA471BDBE0020098946D /* Walk atlases */,
+			);
+			name = "Texture atlases";
+			sourceTree = "<group>";
+		};
+		849F14E01BDB9EC60036BF7E /* Commandos */ = {
+			isa = PBXGroup;
+			children = (
+				849F14E11BDB9EC60036BF7E /* AppDelegate.h */,
+				849F14E21BDB9EC60036BF7E /* AppDelegate.m */,
+				849F14F11BDB9EC60036BF7E /* Info.plist */,
+				849F14E41BDB9EC60036BF7E /* Supporting Files */,
+			);
+			path = Commandos;
+			sourceTree = "<group>";
+		};
+		849F14E41BDB9EC60036BF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849F14E51BDB9EC60036BF7E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		84F6ABB61BD58C380030D184 = {
 			isa = PBXGroup;
 			children = (
+				849F14E01BDB9EC60036BF7E /* Commandos */,
 				84F6ABC11BD58C380030D184 /* Commandos On Phone */,
 				84F6ABC01BD58C380030D184 /* Products */,
+				840B6F001BDBA9DA00507D69 /* Shared resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				84F6ABBF1BD58C380030D184 /* Commandos On Phone.app */,
+				849F14DF1BDB9EC60036BF7E /* Commandos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,33 +334,36 @@
 		84F6ABC11BD58C380030D184 /* Commandos On Phone */ = {
 			isa = PBXGroup;
 			children = (
-				84F6ABC51BD58C380030D184 /* AppDelegate.h */,
-				84F6ABC61BD58C380030D184 /* AppDelegate.m */,
-				84F6ABC81BD58C380030D184 /* GameScene.h */,
-				84F6ABC91BD58C380030D184 /* GameScene.m */,
-				84F6ABCB1BD58C380030D184 /* GameScene.sks */,
-				84F6ABCD1BD58C380030D184 /* GameViewController.h */,
-				84F6ABCE1BD58C380030D184 /* GameViewController.m */,
-				84F6ABD01BD58C380030D184 /* Main.storyboard */,
-				84F6ABD31BD58C380030D184 /* Assets.xcassets */,
-				84F6ABD51BD58C380030D184 /* LaunchScreen.storyboard */,
-				84F6ABD81BD58C380030D184 /* Info.plist */,
-				84F6ABC21BD58C380030D184 /* Supporting Files */,
+				840B6F111BDBAA4A00507D69 /* AppDelegate.h */,
+				840B6F121BDBAA4A00507D69 /* AppDelegate.m */,
+				840B6F131BDBAA4A00507D69 /* GameViewController.h */,
+				840B6F141BDBAA4A00507D69 /* GameViewController.m */,
+				840B6F151BDBAA4A00507D69 /* Info.plist */,
+				840B6F161BDBAA4A00507D69 /* main.m */,
 			);
 			path = "Commandos On Phone";
-			sourceTree = "<group>";
-		};
-		84F6ABC21BD58C380030D184 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				84F6ABC31BD58C380030D184 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		849F14DE1BDB9EC60036BF7E /* Commandos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849F14F41BDB9EC60036BF7E /* Build configuration list for PBXNativeTarget "Commandos" */;
+			buildPhases = (
+				849F14DB1BDB9EC60036BF7E /* Sources */,
+				849F14DC1BDB9EC60036BF7E /* Frameworks */,
+				849F14DD1BDB9EC60036BF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Commandos;
+			productName = Commandos;
+			productReference = 849F14DF1BDB9EC60036BF7E /* Commandos.app */;
+			productType = "com.apple.product-type.application";
+		};
 		84F6ABBE1BD58C380030D184 /* Commandos On Phone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F6ABDB1BD58C380030D184 /* Build configuration list for PBXNativeTarget "Commandos On Phone" */;
@@ -116,6 +390,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Adnan Zahid";
 				TargetAttributes = {
+					849F14DE1BDB9EC60036BF7E = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					84F6ABBE1BD58C380030D184 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -135,58 +412,160 @@
 			projectRoot = "";
 			targets = (
 				84F6ABBE1BD58C380030D184 /* Commandos On Phone */,
+				849F14DE1BDB9EC60036BF7E /* Commandos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		849F14DD1BDB9EC60036BF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840B6F671BDBAC0600507D69 /* runRightForward.atlas in Resources */,
+				840B6F551BDBAC0600507D69 /* car2.atlas in Resources */,
+				840B6F571BDBAC0600507D69 /* fire.atlas in Resources */,
+				840B6F531BDBAC0600507D69 /* car1.atlas in Resources */,
+				840B6F651BDBAC0600507D69 /* runRightBackward.atlas in Resources */,
+				84A1318D1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas in Resources */,
+				84A131741BDC0D0A00DDD1A4 /* shootBackward.atlas in Resources */,
+				840B6F611BDBAC0600507D69 /* runLeftForward.atlas in Resources */,
+				840B6F751BDBAC0600507D69 /* walkRightBackward.atlas in Resources */,
+				84A131801BDC0D0A00DDD1A4 /* shootRightBackward.atlas in Resources */,
+				840B6F731BDBAC0600507D69 /* walkRight.atlas in Resources */,
+				840B6F711BDBAC0600507D69 /* walkLeftForward.atlas in Resources */,
+				84A131761BDC0D0A00DDD1A4 /* shootForward.atlas in Resources */,
+				840B6F5D1BDBAC0600507D69 /* runLeft.atlas in Resources */,
+				84A131821BDC0D0A00DDD1A4 /* shootRightForward.atlas in Resources */,
+				840B6F6D1BDBAC0600507D69 /* walkLeft.atlas in Resources */,
+				840B6F5F1BDBAC0600507D69 /* runLeftBackward.atlas in Resources */,
+				84A1317A1BDC0D0A00DDD1A4 /* shootLeftBackward.atlas in Resources */,
+				840B6F6B1BDBAC0600507D69 /* walkForward.atlas in Resources */,
+				840B6F6F1BDBAC0600507D69 /* walkLeftBackward.atlas in Resources */,
+				84A1317C1BDC0D0A00DDD1A4 /* shootLeftForward.atlas in Resources */,
+				840B6F631BDBAC0600507D69 /* runRight.atlas in Resources */,
+				84A131781BDC0D0A00DDD1A4 /* shootLeft.atlas in Resources */,
+				840B6F771BDBAC0600507D69 /* walkRightForward.atlas in Resources */,
+				840B6F5B1BDBAC0600507D69 /* runForward.atlas in Resources */,
+				840B6F3C1BDBABEF00507D69 /* Assets.xcassets in Resources */,
+				840B6F691BDBAC0600507D69 /* walkBackward.atlas in Resources */,
+				84A1317E1BDC0D0A00DDD1A4 /* shootRight.atlas in Resources */,
+				840B6F591BDBAC0600507D69 /* runBackward.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F6ABBD1BD58C380030D184 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6ABCC1BD58C380030D184 /* GameScene.sks in Resources */,
-				84F6ABD71BD58C380030D184 /* LaunchScreen.storyboard in Resources */,
-				84F6ABD41BD58C380030D184 /* Assets.xcassets in Resources */,
-				84F6ABD21BD58C380030D184 /* Main.storyboard in Resources */,
+				840B6F621BDBAC0600507D69 /* runRight.atlas in Resources */,
+				84A131791BDC0D0A00DDD1A4 /* shootLeftBackward.atlas in Resources */,
+				840B6F761BDBAC0600507D69 /* walkRightForward.atlas in Resources */,
+				840B6F561BDBAC0600507D69 /* fire.atlas in Resources */,
+				84A1318C1BDC0F7C00DDD1A4 /* gunShotExplosion.atlas in Resources */,
+				84A131771BDC0D0A00DDD1A4 /* shootLeft.atlas in Resources */,
+				840B6F661BDBAC0600507D69 /* runRightForward.atlas in Resources */,
+				84A131811BDC0D0A00DDD1A4 /* shootRightForward.atlas in Resources */,
+				84A1317D1BDC0D0A00DDD1A4 /* shootRight.atlas in Resources */,
+				840B6F581BDBAC0600507D69 /* runBackward.atlas in Resources */,
+				840B6F6E1BDBAC0600507D69 /* walkLeftBackward.atlas in Resources */,
+				840B6F681BDBAC0600507D69 /* walkBackward.atlas in Resources */,
+				840B6F5C1BDBAC0600507D69 /* runLeft.atlas in Resources */,
+				840B6F721BDBAC0600507D69 /* walkRight.atlas in Resources */,
+				840B6F5E1BDBAC0600507D69 /* runLeftBackward.atlas in Resources */,
+				840B6F521BDBAC0600507D69 /* car1.atlas in Resources */,
+				840B6F5A1BDBAC0600507D69 /* runForward.atlas in Resources */,
+				84A1317F1BDC0D0A00DDD1A4 /* shootRightBackward.atlas in Resources */,
+				840B6F701BDBAC0600507D69 /* walkLeftForward.atlas in Resources */,
+				840B6F191BDBAA4A00507D69 /* Info.plist in Resources */,
+				84A131751BDC0D0A00DDD1A4 /* shootForward.atlas in Resources */,
+				840B6F641BDBAC0600507D69 /* runRightBackward.atlas in Resources */,
+				840B6F601BDBAC0600507D69 /* runLeftForward.atlas in Resources */,
+				840B6F6C1BDBAC0600507D69 /* walkLeft.atlas in Resources */,
+				84A131731BDC0D0A00DDD1A4 /* shootBackward.atlas in Resources */,
+				84A1317B1BDC0D0A00DDD1A4 /* shootLeftForward.atlas in Resources */,
+				840B6F541BDBAC0600507D69 /* car2.atlas in Resources */,
+				840B6F6A1BDBAC0600507D69 /* walkForward.atlas in Resources */,
+				840B6F3B1BDBABEF00507D69 /* Assets.xcassets in Resources */,
+				840B6F741BDBAC0600507D69 /* walkRightBackward.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		849F14DB1BDB9EC60036BF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1318A1BDC0D7900DDD1A4 /* Enemy.m in Sources */,
+				840B6F321BDBABE600507D69 /* Car.m in Sources */,
+				849F14E61BDB9EC60036BF7E /* main.m in Sources */,
+				84A131861BDC0D5B00DDD1A4 /* SKButton.m in Sources */,
+				84A1316A1BDC0CBE00DDD1A4 /* Hero.m in Sources */,
+				840B6F3E1BDBABEF00507D69 /* SpriteFactory.m in Sources */,
+				840B6F0C1BDBA9FD00507D69 /* GameScene.m in Sources */,
+				840B6F281BDBABD900507D69 /* Map.m in Sources */,
+				840B6F341BDBABE600507D69 /* PathFinder.m in Sources */,
+				849F14E31BDB9EC60036BF7E /* AppDelegate.m in Sources */,
+				840B6F361BDBABE600507D69 /* Soldier.m in Sources */,
+				840B6F2A1BDBABD900507D69 /* ShortestPathStep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F6ABBB1BD58C380030D184 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6ABCF1BD58C380030D184 /* GameViewController.m in Sources */,
-				84F6ABC71BD58C380030D184 /* AppDelegate.m in Sources */,
-				84F6ABCA1BD58C380030D184 /* GameScene.m in Sources */,
-				84F6ABC41BD58C380030D184 /* main.m in Sources */,
+				840B6F171BDBAA4A00507D69 /* AppDelegate.m in Sources */,
+				840B6F3D1BDBABEF00507D69 /* SpriteFactory.m in Sources */,
+				84A131891BDC0D7900DDD1A4 /* Enemy.m in Sources */,
+				840B6F271BDBABD900507D69 /* Map.m in Sources */,
+				840B6F181BDBAA4A00507D69 /* GameViewController.m in Sources */,
+				840B6F1A1BDBAA4A00507D69 /* main.m in Sources */,
+				840B6F331BDBABE600507D69 /* PathFinder.m in Sources */,
+				840B6F311BDBABE600507D69 /* Car.m in Sources */,
+				84A131691BDC0CBE00DDD1A4 /* Hero.m in Sources */,
+				840B6F291BDBABD900507D69 /* ShortestPathStep.m in Sources */,
+				840B6F071BDBA9EB00507D69 /* GameScene.m in Sources */,
+				840B6F351BDBABE600507D69 /* Soldier.m in Sources */,
+				84A131851BDC0D5B00DDD1A4 /* SKButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		84F6ABD01BD58C380030D184 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84F6ABD11BD58C380030D184 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84F6ABD51BD58C380030D184 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84F6ABD61BD58C380030D184 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		849F14F21BDB9EC60036BF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Commandos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = adnan.zahid.Commandos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		849F14F31BDB9EC60036BF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Commandos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = adnan.zahid.Commandos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		84F6ABD91BD58C380030D184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -273,7 +652,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Commandos On Phone/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Commandos On Phone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "adnan.zahid.Commandos-On-Phone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,7 +664,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Commandos On Phone/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Commandos On Phone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "adnan.zahid.Commandos-On-Phone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +675,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		849F14F41BDB9EC60036BF7E /* Build configuration list for PBXNativeTarget "Commandos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849F14F21BDB9EC60036BF7E /* Debug */,
+				849F14F31BDB9EC60036BF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84F6ABBA1BD58C380030D184 /* Build configuration list for PBXProject "Commandos On Phone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -310,6 +700,7 @@
 				84F6ABDD1BD58C380030D184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
